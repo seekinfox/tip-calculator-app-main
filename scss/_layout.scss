@@ -1,0 +1,98 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "a"
+        "b";
+    input, button {
+        border: none;
+    }
+    
+    .calc {
+        grid-area: a;
+        //inner layout
+        display: grid;
+        grid-gap: 1rem 1rem;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+            "A A A A A A"
+            "B B B B B B"
+            "C C C C C C"
+            "D D D E E E"
+            "F F F G G G"
+            "H H H I I I"
+            "J J J J J J"
+            "K K K K K K";
+        
+        p:first-child {
+            grid-area: A;
+            margin-bottom: -0.6rem;
+        }
+        .tb, #total-bill {
+            grid-area: B;
+            margin-bottom: 1rem;
+        }
+        p:nth-of-type(2) {
+            grid-area: C;
+            
+        }
+        p:nth-of-type(3) {
+             grid-area: D;
+            
+        }
+        p:nth-of-type(4) {
+             grid-area: E;
+            
+        }
+        p:nth-of-type(5) {
+            
+             grid-area: F;
+        }
+        p:nth-of-type(6) {
+            
+             grid-area: G;
+        }
+        p:nth-of-type(7) {
+             grid-area: H;
+        }
+        #custom {
+            grid-area: I;
+        }
+        p:nth-of-type(8) {
+             grid-area: J;
+        }
+        .nop, #nop {
+            grid-area: K;
+        }
+        
+    }
+    .tally {
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        .tip-amount, .total {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        button {
+            height: 2.8rem;
+        }
+    }
+    
+    
+}

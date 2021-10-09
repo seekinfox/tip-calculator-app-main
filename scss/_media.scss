@@ -1,0 +1,57 @@
+@media (min-width:700px) {
+
+    html,
+    body {
+        height: auto;
+        padding-bottom:5rem;
+    }
+
+    header {
+        margin-bottom: 5rem;
+    }
+
+    main.container {
+        padding: 1.8rem;
+        border-radius: 1.5rem;
+        grid-gap: 2rem;
+        width: 60vw;
+        grid-template-areas:
+            "a b"
+            "a b";
+        .calc {
+            grid-template-areas: 
+            "A A A A A A A A A"
+            "B B B B B B B B B"
+            "C C C C C C C C C"
+            "D D D E E E F F F"
+            "G G G H H H I I I"
+            "J J J J J J J J J"
+            "K K K K K K K K K"
+            ". . . . . . . . .    ";
+        }
+        
+        .tally {
+            justify-content: space-between;
+            
+            .tip-amount,
+            .total {
+                > div {
+                    margin-top: 1rem;
+                }
+            }
+            
+            .tip-amount {
+                margin-bottom: -6rem;
+            }
+            
+            #tip-amnt,
+            #total-per {
+                font-size: 2.5rem;
+            }
+            button {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+}

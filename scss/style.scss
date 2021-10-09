@@ -1,0 +1,162 @@
+@import 'colors';
+@import 'layout';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Space Mono', monospace;
+    background: $Light-grayish-cyan;
+    //    font-size: 24px;
+}
+
+@mixin dark-box {
+    text-align: center;
+    background: $Very-dark-cyan;
+    color: $Light-grayish-cyan1;
+    font-size: 23px;
+    padding: .3rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+@mixin input-text {
+    color: $Very-dark-cyan;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: .3rem;
+    height: 2.5rem;
+    text-align: right;
+    padding-right: 1rem;
+
+}
+
+header {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: .5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.2rem;
+    color: $Very-dark-cyan;
+
+}
+
+main.container {
+    padding: 2rem;
+    background: $White;
+    border-radius: 1.5rem 1.5rem 0 0;
+    color: hsl(186, 34%, 30%);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1rem;
+
+    input {
+        width: 100%;
+        background: $Light-grayish-cyan1;
+        cursor: pointer;
+    }
+
+    input:focus {
+        outline: 2px solid $Strong-cyan;
+    }
+
+    .calc {
+
+        #total-bill {
+            padding: 0 1rem;
+            text-align: right;
+            width: 100%;
+            @include input-text;
+        }
+
+        .nop,  //svg's position 
+        .tb {
+            position: relative;
+            height: auto;
+            .hash,
+            .doller {
+                position: absolute;
+                left: 1rem;
+                bottom: 50%;
+            }
+            .hash {
+                bottom: 40%;
+            }
+        }
+
+
+        p:nth-of-type(3),
+        :nth-of-type(4),
+        :nth-of-type(5),
+        :nth-of-type(6),
+        :nth-of-type(7) {
+            @include dark-box;
+        }
+
+        .hover:hover {
+            background: hsl(172, 57%, 75%);
+            color: $Very-dark-cyan;
+        }
+
+        #custom {
+            text-align: right;
+            @include input-text;
+            padding-right: 1rem;
+        }
+
+        #nop {
+            margin-top: -.5rem;
+            @include input-text;
+        }
+
+
+    }
+
+    .tally {
+        padding: 2rem 1.5rem 1.7rem;
+        background: $Very-dark-cyan;
+        border-radius: .8rem;
+
+        div p:first-child {
+            color: $White;
+            font-size: 15px;
+            margin-bottom: 0.1rem;
+        }
+
+        p:last-child {
+            font-size: 12px;
+            color: $Dark-grayish-cyan1;
+            margin-bottom: 2rem;
+        }
+
+        #tip-amnt,
+        #total-per {
+            font-size: 23px;
+            color: $Strong-cyan;
+
+        }
+
+        button {
+            background: $Strong-cyan;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $Very-dark-cyan;
+            border-radius: 0.3rem;
+            margin-top: 0.2rem;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background: hsl(172, 57%, 75%);
+        }
+    }
+}
+
+@import 'media';

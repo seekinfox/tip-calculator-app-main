@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <!--    google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- style css file       -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
+    <!--
+ font-family: 'Space Mono', monospace;
   Bill
 
   Select Tip %
@@ -35,10 +37,48 @@
   / person
 
   Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+-->
+    <header>
+        <p>SPLI<br />TTER</p>
+    </header>
+    <main class="container">
+        <section class="calc">
+            <p>bill</p>
+            <div class="tb">
+            <input id="total-bill" type="text" placeholder="$0.00">
+            <img class="doller" src="https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/3370455069e3343329effeb58e60ac62f76fd9f1/images/icon-dollar.svg" alt="$">
+            </div>
+            <p>select tip%</p>
+            <p class="hover" id="five-per">5%</p>
+            <p class="hover" id="ten-per">10%</p>
+            <p class="hover" id="fift-per">15%</p>
+            <p class="hover" id="twent-per">25%</p>
+            <p class="hover" id="fift-per">50%</p>
+            <input id="custom" type="text" placeholder="Custom">
+            <p>Number of People</p>
+            <div class="nop">
+            <input id="nop" type="text" placeholder="0">
+            <img class="hash"  src="https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/3370455069e3343329effeb58e60ac62f76fd9f1/images/icon-person.svg" alt="#">
+            </div>
+        </section>
+        <section class="tally">
+            <div class="tip-amount">
+                <div>
+                    <p>tip amount</p>
+                    <p>/ person</p>
+                </div>
+                <p id="tip-amnt">$0.00</p>
+            </div>
+            <div class="total">
+                <div>
+                    <p>total</p>
+                    <p>/ person</p>
+                </div>
+                <p id="total-per">$0.00</p>
+            </div>
+            <button id="reset">reset</button>
+        </section>
+    </main>
 </body>
+
 </html>
