@@ -26,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/main/Screenshot_2021-10-10%20Frontend%20Mentor%20Tip%20calculator%20app(1).png](https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/main/Screenshot_2021-10-10%20Frontend%20Mentor%20Tip%20calculator%20app(1).png)
+![https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/main/Screenshot_2021-10-10%20Frontend%20Mentor%20Tip%20calculator%20app.png](https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/main/Screenshot_2021-10-10%20Frontend%20Mentor%20Tip%20calculator%20app.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/seekinfox/tip-calculator-app-main](https://github.com/seekinfox/tip-calculator-app-main)
+- Live Site URL: [https://seekinfox.github.io/tip-calculator-app-main/](https://seekinfox.github.io/tip-calculator-app-main/)
 
 ## My process
 
@@ -40,19 +40,22 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SASS/SCSS
+- JAVASCRIPT
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
+How to make a calculator
 
 ### Continued development
-
+javascript/ scss/ css grid
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@seekinfox](https://www.frontendmentor.io/profile/seekinfox)
 
 
 ## Acknowledgments
