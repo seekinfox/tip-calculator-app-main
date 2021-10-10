@@ -9,35 +9,14 @@
     <!-- style css file       -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+    <!--    main javascript file-->
+    <script src="main.js" defer></script>
     <title>Frontend Mentor | Tip calculator app</title>
 
 </head>
 
 <body>
 
-    <!--
- font-family: 'Space Mono', monospace;
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
--->
     <header>
         <p>SPLI<br />TTER</p>
     </header>
@@ -45,20 +24,21 @@
         <section class="calc">
             <p>bill</p>
             <div class="tb">
-            <input id="total-bill" type="text" placeholder="$0.00">
-            <img class="doller" src="https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/3370455069e3343329effeb58e60ac62f76fd9f1/images/icon-dollar.svg" alt="$">
+                <input id="total-bill" type="text" placeholder="$0.00">
+                <img class="doller" src="https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/3370455069e3343329effeb58e60ac62f76fd9f1/images/icon-dollar.svg" alt="$">
             </div>
             <p>select tip%</p>
-            <p class="hover" id="five-per">5%</p>
-            <p class="hover" id="ten-per">10%</p>
-            <p class="hover" id="fift-per">15%</p>
-            <p class="hover" id="twent-per">25%</p>
-            <p class="hover" id="fift-per">50%</p>
-            <input id="custom" type="text" placeholder="Custom">
+            <p class="hover" id="five-per" onclick="calculateFive()">5%</p>
+            <p class="hover" id="ten-per" onclick="calculateTen()">10%</p>
+            <p class="hover" id="fiftn-per" onclick="calculateFifteen()">15%</p>
+            <p class="hover" id="twent-per" onclick="calculateTwentyFive()">25%</p>
+            <p class="hover" id="fift-per" onclick="calculateFifty()">50%</p>
+            <input id="custom" type="text" placeholder="Custom" onkeyup="calculateCustom()">
             <p>Number of People</p>
             <div class="nop">
-            <input id="nop" type="text" placeholder="0">
-            <img class="hash"  src="https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/3370455069e3343329effeb58e60ac62f76fd9f1/images/icon-person.svg" alt="#">
+                <p id="warning"></p>
+                <input id="nop" type="text" placeholder="0">
+                <img class="hash" src="https://raw.githubusercontent.com/seekinfox/tip-calculator-app-main/3370455069e3343329effeb58e60ac62f76fd9f1/images/icon-person.svg" alt="#">
             </div>
         </section>
         <section class="tally">
@@ -76,7 +56,7 @@
                 </div>
                 <p id="total-per">$0.00</p>
             </div>
-            <button id="reset">reset</button>
+            <button id="reset" onclick="reset()">reset</button>
         </section>
     </main>
 </body>

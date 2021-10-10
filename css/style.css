@@ -140,6 +140,15 @@ main.container .calc .nop .hash,
 main.container .calc .tb .hash {
   bottom: 40%;
 }
+main.container .calc .nop #warning,
+main.container .calc .tb #warning {
+  display: block;
+  position: absolute;
+  color: #ea5b5b;
+  font-size: 14px;
+  right: 0;
+  top: -110%;
+}
 main.container .calc p:nth-of-type(3),
 main.container .calc :nth-of-type(4),
 main.container .calc :nth-of-type(5),

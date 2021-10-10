@@ -87,6 +87,15 @@ main.container {
             .hash {
                 bottom: 40%;
             }
+            
+            #warning {
+                display: block;
+                position: absolute;
+                color: $Red;
+                font-size: 14px;
+                right: 0;
+                top: -110%;
+            }
         }
 
 
@@ -102,7 +111,7 @@ main.container {
             background: hsl(172, 57%, 75%);
             color: $Very-dark-cyan;
         }
-
+        
         #custom {
             text-align: right;
             @include input-text;
