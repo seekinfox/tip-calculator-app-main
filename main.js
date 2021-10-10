@@ -108,6 +108,8 @@ function reset() {
     document.getElementById("fiftn-per").style.backgroundColor = null;
     document.getElementById("twent-per").style.backgroundColor = null;
     document.getElementById("fift-per").style.backgroundColor = null;
+    document.getElementById("warning").style.display = "none";
+    document.getElementById("nop").style.outline = "none";
 }
 
 
